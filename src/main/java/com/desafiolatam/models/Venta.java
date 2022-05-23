@@ -79,6 +79,16 @@ public class Venta {
 		this.cliente = cliente;
 	}
 
+	public Venta(Long id, Float monto, List<Producto> listaProductos, Cliente cliente, Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.monto = monto;
+		this.listaProductos = listaProductos;
+		this.cliente = cliente;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
+
 	public Long getId() {
 		return id;
 	}

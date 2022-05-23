@@ -67,6 +67,16 @@ public class Compra {
 		this.monto = monto;
 	}
 
+	public Compra(Long id, Date fecha, Cliente cliente, Float monto, Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.fecha = fecha;
+		this.cliente = cliente;
+		this.monto = monto;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
+
 	public Long getId() {
 		return id;
 	}

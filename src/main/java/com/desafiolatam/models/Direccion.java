@@ -91,6 +91,21 @@ public class Direccion {
 		this.cliente = cliente;
 	}
 
+	public Direccion(Long id, String calle, String numero, String poblacion, String ciudad, String comuna,
+			String region, Cliente cliente, Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.calle = calle;
+		this.numero = numero;
+		this.poblacion = poblacion;
+		this.ciudad = ciudad;
+		this.comuna = comuna;
+		this.region = region;
+		this.cliente = cliente;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
+
 	public Long getId() {
 		return id;
 	}

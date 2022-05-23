@@ -24,8 +24,6 @@
 			Dirección cliente</a></li>
 	<li class="nav-item"><a class="nav-link" style="color:Black;" href="/compra">Compra</a></li>
 	<li class="nav-item"><a class="nav-link" style="color:Black;" href="/producto">Producto</a></li>
-	<li>
-	
 	
 	<li class="nav-item" >
 		<a class="nav-link" style="color:Black;">

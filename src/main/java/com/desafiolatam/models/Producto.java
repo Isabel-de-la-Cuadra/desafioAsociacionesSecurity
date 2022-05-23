@@ -81,6 +81,18 @@ public class Producto {
 		this.stock = stock;
 		this.venta = venta;
 	}
+	public Producto(Long id, String nombre, String descripcion, Float precio, Float stock, List<Venta> venta,
+			Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.stock = stock;
+		this.venta = venta;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
 	public Long getId() {
 		return id;
 	}

@@ -22,7 +22,6 @@
 	<br>
 
 	<div class="text-center">
-		<img alt="" src="">
 		<h3>Detalle por Venta</h3>
 	</div>
 
@@ -66,18 +65,15 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<!-- <th scope="col">#</th>  -->
 						<th scope="col">Cantidad</th>
 						<th scope="col">Nombre</th>
 						<th scope="col">Precio</th>
 						<th scope="col">Subtotal</th>
-						<!-- <th scope="col-2">Acciones</th>  -->
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach var="productosVentas" items="${listaProductosVentas}">
 						<tr>
-							<!-- <th scope="row"><c:out value="${productosVentas.id}"></c:out></th> -->
 							<td><c:out value="${productosVentas.cantidad}">
 								</c:out></td>
 							<td><c:out value="${productosVentas.producto.nombre}">

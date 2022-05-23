@@ -91,6 +91,20 @@ public class Cliente {
 			this.compras = compras;
 			this.ventas = ventas;
 		}
+		
+		public Cliente(Long id, String nombre, String apellido, String correo, Direccion direccion,
+				List<Compra> compras, List<Venta> ventas, Date createdAt, Date updatedAt) {
+			super();
+			this.id = id;
+			this.nombre = nombre;
+			this.apellido = apellido;
+			this.correo = correo;
+			this.direccion = direccion;
+			this.compras = compras;
+			this.ventas = ventas;
+			this.createdAt = createdAt;
+			this.updatedAt = updatedAt;
+		}
 
 		public Long getId() {
 			return id;

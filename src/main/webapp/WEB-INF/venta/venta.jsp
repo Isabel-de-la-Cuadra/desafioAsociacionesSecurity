@@ -71,8 +71,6 @@
 		</form>
 	</div>
 
-
-
 	<div class="container mt-5">
 		<h3 class="fs-4 card-title fw-bold mb-4">Detalle Compra</h3>
 		<div class="table-responsive-md">

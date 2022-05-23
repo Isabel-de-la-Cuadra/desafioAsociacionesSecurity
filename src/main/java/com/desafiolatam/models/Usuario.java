@@ -88,6 +88,20 @@ public class Usuario {
 		this.passwordControl = passwordControl;
 		this.roles = roles;
 	}
+		
+	public Usuario(Long id, String nombre, String apellido, String correo, String password, String passwordControl,
+			List<Rol> roles, Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correo = correo;
+		this.password = password;
+		this.passwordControl = passwordControl;
+		this.roles = roles;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
 	public Long getId() {
 		return id;
 	}

@@ -84,6 +84,18 @@ public class ProductosVentas {
 		this.valorUnitario = valorUnitario;
 		this.total = total;
 	}
+	public ProductosVentas(Long id, Producto producto, Venta venta, Integer cantidad, Float valorUnitario, Float total,
+			Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.producto = producto;
+		this.venta = venta;
+		this.cantidad = cantidad;
+		this.valorUnitario = valorUnitario;
+		this.total = total;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
 	public Long getId() {
 		return id;
 	}

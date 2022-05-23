@@ -54,6 +54,15 @@ public class Rol {
 		this.descripcion = descripcion;
 		this.usuarios = usuarios;
 	}
+	public Rol(Long id, String nombre, String descripcion, List<Usuario> usuarios, Date createdAt, Date updatedAt) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.usuarios = usuarios;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+	}
 	public Long getId() {
 		return id;
 	}
