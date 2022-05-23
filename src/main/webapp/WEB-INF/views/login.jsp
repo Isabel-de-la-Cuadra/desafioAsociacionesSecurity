@@ -38,7 +38,7 @@
 								</div>
 							</c:if>
 
-							<form method="POST" action="/login" autocomplete="off">
+							<form method="POST" action="login" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="correo">Correo</label> <input
 										id="correo" type="email" class="form-control" name="username"
@@ -55,11 +55,10 @@
 								</div>
 								
 								<div class="align-items-center d-flex">
-									<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+								<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 									<button type="submit" class="btn btn-primary ms-auto" id="botonColor">
 										Ingresar</button>
 								</div>
-							
 							</form>
 						</div>
 						

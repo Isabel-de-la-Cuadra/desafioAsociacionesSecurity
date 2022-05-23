@@ -36,7 +36,7 @@ public class UsuarioService {
 			return false;
 		}
 	}
-	
+
 	// Asignarle un nuevo rol a un usuario (recordar relación ManyToMany)
 	public boolean agregarRol(Usuario usuario) {
 		usuarioRepository.save(usuario);
@@ -44,11 +44,11 @@ public class UsuarioService {
 	}
 
 	public boolean login(String correo, String password) {
-		// buscar si existe con ese correo
+		// buscar si existe con ese email
 		Usuario usuario = usuarioRepository.findByCorreo(correo);
 
 		if (usuario != null) {// si existe o no el correo
-			if (BCrypt.checkpw(password, usuario.getPassword())) { // si los password son iguales
+			if (BCrypt.checkpw(password, usuario.getPassword())) {
 				return true;
 			} else {
 				return false;// pasword distintos
@@ -58,7 +58,7 @@ public class UsuarioService {
 		}
 	}
 
-	public Usuario findByCorreo(String username) {
+	public Usuario findByEmail(String username) {
 		Usuario usuario = usuarioRepository.findByCorreo(username);
 		return usuario;
 	}
@@ -66,5 +66,5 @@ public class UsuarioService {
 	public List<Usuario> findAll() {
 		return usuarioRepository.findAll();
 	}
-	
+
 }

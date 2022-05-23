@@ -12,6 +12,7 @@
 
 <jsp:include page='../template/navbar2.jsp'>
 <jsp:param name='title' value='Sistema CumplePekes' />
+<jsp:param name='usuarioEmail' value='${usuarioEmail}' />
 </jsp:include> 
 
 <br>
@@ -23,7 +24,7 @@
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
 					<div class="card shadow-lg" id="card">
 						<div class="card-body p-5">
-							<h1 class="fs-4 card-title mb-4">Formulario de Registro de Cliente</h1>
+							<h1 class="fs-4 card-title mb-4">Formulario de Registro de Dirección Cliente</h1>
 
 							<c:if test="${msgError !=null}">
 								<div class="alert alert-danger" role="alert">
@@ -40,12 +41,12 @@
 							<form:form  method="POST" action="/direccion/cliente/agregar" modelAttribute="direccion">
 						
 								<div class="mb-3">
-									<form:select path="usuario" class="form-select">
+									<form:select path="cliente" class="form-select">
 										<form:option value="0">Seleccione Cliente</form:option>
-										<c:forEach items="${listaClientes}" var="user">
-											<c:if test="${user.direccion.id == null }">
-												<form:option value="${user.id}">
-													<c:out value="${user.nombre}"></c:out>
+										<c:forEach items="${listaClientes}" var="cliente">
+											<c:if test="${cliente.direccion.id == null }">
+												<form:option value="${cliente.id}">
+													<c:out value="${cliente.nombre}"></c:out>
 												</form:option>
 											</c:if>	
 										</c:forEach>								

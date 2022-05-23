@@ -1,5 +1,4 @@
 package com.desafiolatam.securingweb;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ import com.desafiolatam.models.Usuario;
 import com.desafiolatam.repositories.UsuarioRepository;
 
 @Service
-public class UserDetailsServiceImpl implements UserDetailsService{
+public class UserDetailsServiceImpl implements  UserDetailsService{
 
 	@Autowired
 	UsuarioRepository usuarioRepository;

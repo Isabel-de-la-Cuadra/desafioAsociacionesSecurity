@@ -26,7 +26,7 @@ public class DireccionController {
 	ClienteService clienteService;
 	
 	//despliegue
-		@RequestMapping("/cliente") // https://localhost:9080/direccion/cliente
+		@RequestMapping("/cliente") // http://localhost:9080/direccion/cliente
 		public String mostrarJSPDireccionCliente(@ModelAttribute("direccion") Direccion direccion, Model model) {
 			model.addAttribute("listaClientes", clienteService.findAll());
 			return "cliente/direccionCliente.jsp"; // Llamado al jsp u otra ruta

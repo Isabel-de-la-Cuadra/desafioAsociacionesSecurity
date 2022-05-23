@@ -14,7 +14,7 @@
 
 	<jsp:include page='../template/navbar2.jsp'>
 		<jsp:param name='title' value='Sistema CumplePekes' />
-		<jsp:param name='nombreUsuario' value='${nombreUsuario}' />
+		<jsp:param name='usuarioEmail' value='${usuarioEmail}' />
 	</jsp:include>
 
 	<div class="container">
@@ -36,7 +36,7 @@
 		<h1>¡Bienvenid@ al sistema web!</h1>
 <br>	
 <br>			
-		<h3>${nombreUsuario}, elige en el Navbar lo que deseas hacer </h3>
+		<h3>${usuarioEmail}, elige en el Navbar lo que deseas hacer </h3>
 
 	</div>
 <br>

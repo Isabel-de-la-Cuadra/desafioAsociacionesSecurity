@@ -22,21 +22,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http
-			.authorizeRequests()
-				.antMatchers("/css/**","/js/**","/registro","/api/**").permitAll()
+		http.authorizeRequests().antMatchers("/css/**","/js/**","/registro","/api/**").permitAll()
 				//.antMatchers("/admin/cliente/**").access("hasRole('ADMIN')")
-				.anyRequest().authenticated()
-				.and()
-			.formLogin()
-				.loginPage("/usuario/login")
+				.anyRequest().authenticated().and().formLogin().loginPage("/usuario/login")
 				.permitAll()
 				.and()
 			.logout()
 				.permitAll();
 	}
-    
-	@Bean
+    @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }

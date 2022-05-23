@@ -9,5 +9,4 @@ public class DesafioAsociacionesSecurityApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DesafioAsociacionesSecurityApplication.class, args);
 	}
-
 }
